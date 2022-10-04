@@ -160,7 +160,7 @@ private class ReachingDefsDomain extends MutableMapping<Pair<CGNode, Integer>> i
                 Pair<CGNode, Integer> otherPutInstrAndNode = domain.getMappedObject(d1);
                 SSAPutInstruction otherPutInstr = (SSAPutInstruction) otherPutInstrAndNode.fst.getIR().getInstructions()[otherPutInstrAndNode.snd];
                 IField otherStaticField = cha.resolveField(otherPutInstr.getDeclaredField());
-                if (!staticField.equals(otherStaticField)) {
+                if (staticField != null && !staticField.equals(otherStaticField)) {
                   result.add(d1);
                 }
               }
