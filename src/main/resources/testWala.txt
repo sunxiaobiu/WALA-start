@@ -1,0 +1,2 @@
+Application,Java,binaryDir,/Users/xsun0035/workspace/monash/FlowDroid/soot-infoflow-android/sootOutput
+Primordial,Java,jarFile,/Users/xsun0035/Library/Android/sdk/platforms/android-30/android.jar
